@@ -1,0 +1,20 @@
+body {
+  background: rgba(245, 178, 54, 0.793);
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  background: rgba(217, 252, 253, 0.53);
+  border: 1px solid rgba(186, 186, 186, 0.222);
+  border-radius: 300px;
+  opacity: 0;
+  animation: anim 8s alternate;
+}
+
+@keyframes anim {
+  100% {
+    opacity: 1;
+    top: -250px;
+  }
+}
