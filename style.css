@@ -1,6 +1,16 @@
+* {
+  cursor: crosshair;
+}
+
 body {
   background: rgba(245, 178, 54, 0.793);
   overflow: hidden;
+}
+
+h3 {
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.496);
+  text-align: center;
 }
 
 .bubble {

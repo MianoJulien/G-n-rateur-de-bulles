@@ -1,4 +1,7 @@
-setInterval(() => {
+const counterDisplay = document.querySelector("h3");
+let counter = 0;
+
+const bubbleMaker = () => {
   const bubble = document.createElement("span");
   bubble.classList.add("bubble");
   document.body.appendChild(bubble);
@@ -9,4 +12,16 @@ setInterval(() => {
 
   bubble.style.top = Math.random() * 100 + 50 + "%";
   bubble.style.left = Math.random() * 100 + "%";
-}, 3000);
+
+  bubble.addEventListener("click", (e) => {
+    counter++;
+    counterDisplay.innerHTML = counter;
+    bubble.remove();
+  });
+
+  setTimeout(() => {
+    bubble.remove();
+  }, 8000);
+};
+
+setInterval(bubbleMaker, 300);
